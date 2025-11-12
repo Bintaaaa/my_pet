@@ -1,0 +1,14 @@
+name: my_pets
+packages:
+  - core
+  - shared
+  - features/**
+  - my_pets
+command:
+  bootstrap:
+    runPubGetInParallel: true
+    usePubspecOverrides: true
+scripts:
+  analyze: melos exec -- flutter analyze
+  test: melos exec -- flutter test --no-pub
+  format: melos exec -- dart format .
