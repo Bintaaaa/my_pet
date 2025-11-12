@@ -1,0 +1,22 @@
+name: feature_pet
+publish_to: "none"
+description: Pet feature module for My Pets
+version: 1.0.0
+environment:
+  sdk: ">=3.7.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  get_it: ^9.0.5
+  core:
+    path: ../../core
+  shared:
+    path: ../../shared
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.3
