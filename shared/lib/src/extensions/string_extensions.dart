@@ -1,0 +1,8 @@
+extension StringExtensions on String? {
+  bool get isNullOrEmpty => this == null || this!.trim().isEmpty;
+
+  String get capitalize {
+    if (this == null || this!.isEmpty) return '';
+    return this![0].toUpperCase() + this!.substring(1);
+  }
+}
